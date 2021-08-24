@@ -1,0 +1,70 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+body p {
+  color: #595959;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.padding {
+  padding: 150px 0px;
+}
+#header {
+  height: 55px;
+}
+#header .header-frame {
+  width: 1200px;
+  height: 55px;
+  position: relative;
+  margin: 0 auto;
+  background-image: url(../images/frame/header/nav-bg.png);
+  background-size: 100% 100%;
+}
+#header .header-frame .left-link {
+  position: absolute;
+  top: 15px;
+  left: 130px;
+}
+#header .header-frame .left-link ul {
+  display: inline-block;
+  margin: 0;
+}
+#header .header-frame .left-link ul li {
+  float: left;
+}
+#header .header-frame .left-link ul li a {
+  display: inline-block;
+}
+#header .header-frame .left-link ul li a i {
+  display: inline-block;
+  color: #315760;
+  margin: 0px 7px;
+}
+#header .header-frame .right-link {
+  position: absolute;
+  top: 15px;
+  right: 160px;
+}
+#header .header-frame .right-link ul {
+  display: inline-block;
+  margin: 0;
+}
+#header .header-frame .right-link ul li {
+  float: left;
+}
+#header .header-frame .right-link ul li a {
+  display: inline-block;
+}
+#header .header-frame .right-link ul li a i {
+  display: inline-block;
+  color: #315760;
+  margin: 0px 7px;
+}

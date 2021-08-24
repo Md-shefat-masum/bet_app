@@ -1,0 +1,24 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+body p {
+  color: #595959;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.padding {
+  padding: 150px 0px;
+}
+#middle-contents {
+  width: 1202px;
+  margin: 0 auto;
+  overflow: visible;
+}

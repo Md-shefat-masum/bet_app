@@ -1,0 +1,64 @@
+@import 'variable.less';
+
+#middle-contents {
+    .mid-frame {
+        float: left;
+        width: 800px;
+        height: 700px;
+        // border: 1px solid red;
+        padding: 0px 15px;
+    }
+
+    .content {
+        position: relative;
+        padding: 10px;
+        height: 600px;
+
+        .top-left-frame {
+            background: url(../images/frame/middle/top-left.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            width: 300px;
+            height: 90px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .bottom-left-frame {
+            background: url(../images/frame/middle/bottom-left.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            width: 204px;
+            height: 130px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .bottom-right-frame {
+            background: url(../images/frame/middle/bottom-right.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            width: 379px;
+            height: 219px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .streaming-player {
+            position: absolute;
+            height: 500px;
+            width: 650px;
+            border: 1px solid #10606c;
+            left: 50%;
+            top: 52%;
+            transform: translate(-50%, -50%);
+            iframe{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}

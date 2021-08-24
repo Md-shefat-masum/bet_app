@@ -1,0 +1,102 @@
+@import 'variable.less';
+
+#middle-contents {
+    .mid-frame {
+        float: left;
+        width: 800px;
+        height: 700px;
+        // border: 1px solid red;
+        padding: 0px 15px;
+    }
+
+    .content {
+        position: relative;
+        padding: 10px;
+        height: 600px;
+
+        .top-left-frame {
+            background: url(../images/frame/middle/top-left.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            width: 300px;
+            height: 90px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .bottom-left-frame {
+            background: url(../images/frame/middle/bottom-left.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            width: 204px;
+            height: 130px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .bottom-right-frame {
+            background: url(../images/frame/middle/bottom-right.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            width: 379px;
+            height: 219px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .feedback-form {
+            width: 100%;
+            height: 100%;
+            // border: 1px solid red;
+
+            h2 {
+                font-size: 20px;
+                color: white;
+                text-align: center;
+                padding: 50px 0px;
+
+            }
+
+            form {
+                padding: 20px;
+                padding-right: 30px;
+
+                input,
+                textarea {
+                    width: 100%;
+                    padding: 20px;
+                    background: transparent;
+                    border: 0;
+                    border: 1px solid #10606c;
+                    margin-bottom: 30px;
+                    color: white;
+                    &:focus{
+                        outline: 0;
+                        outline: 1px solid #fab072;;
+                    }
+                }
+
+                button {
+                    display: inline-block;
+                    background: transparent;
+                    border: 0;
+                    border: 1px solid #10606c;
+                    margin-bottom: 30px;
+                    color: white;
+                    padding: 10px 35px;
+                    border-radius: 3px;
+                    transition: all linear .3s;
+                    cursor: pointer;
+                    position: relative;
+                    z-index: 999;
+                    &:hover {
+                        color: #fab072;
+                    }
+                }
+            }
+        }
+    }
+}

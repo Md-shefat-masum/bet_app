@@ -1,0 +1,289 @@
+@import 'variable.less';
+
+.profile-information {
+    padding: 40px;
+
+    .about-section {
+        height: 448px;
+        margin-top: 10px;
+        overflow-y: scroll;
+
+        .card {
+            margin-bottom: 30px;
+            background: transparent;
+
+            .card-header {
+                background: url('../images/frame/player-profile/cup-name.png');
+                background-size: 35% 83%;
+                background-repeat: no-repeat;
+
+                h3 {
+                    color: white;
+                    font-size: 20px;
+                }
+            }
+
+            .card-body {
+                border: 1px solid @line-color;
+                margin-right: 40px;
+
+                strong {
+                    color: white;
+                }
+
+                .about-info-p p {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .timeline-section {
+        height: 448px;
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+
+        .item {
+            display: flex;
+            flex: auto;
+        }
+
+        #timeline {
+            position: relative;
+            display: table;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5rem;
+
+            ul {
+                li {
+                    color: white;
+                }
+            }
+        }
+
+        #timeline div:after {
+            content: '';
+            width: 2px;
+            position: absolute;
+            top: .5rem;
+            bottom: 0rem;
+            left: 60px;
+            z-index: 1;
+            background: #C5C5C5;
+        }
+
+        #timeline h3 {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 5rem;
+            color: #888;
+            margin: 0;
+            font-size: 1em;
+            font-weight: 400;
+        }
+
+        @media (min-width: 62em) {
+            #timeline h3 {
+                font-size: 1.1em;
+            }
+        }
+
+        #timeline section.year {
+            position: relative;
+        }
+
+        #timeline section.year:first-child section {
+            margin-top: -1.3em;
+            padding-bottom: 0px;
+        }
+
+        #timeline section.year section {
+            position: relative;
+            padding-bottom: 1.25em;
+            margin-bottom: 2.2em;
+        }
+
+        #timeline section.year section h4 {
+            position: absolute;
+            bottom: 0;
+            font-size: .9em;
+            font-weight: 400;
+            line-height: 1.2em;
+            margin: 0;
+            padding: 0 0 0 89px;
+            color: rgb(153, 153, 153);
+        }
+
+        @media (min-width: 62em) {
+            #timeline section.year section h4 {
+                font-size: 1em;
+            }
+        }
+
+        #timeline section.year section ul {
+            list-style-type: none;
+            padding: 0 0 0 75px;
+            margin: -1.35rem 0 1em;
+            max-width: 32rem;
+            font-size: 1em;
+        }
+
+        @media (min-width: 62em) {
+            #timeline section.year section ul {
+                font-size: 1.1em;
+                padding: 0 0 0 81px;
+            }
+        }
+
+        #timeline section.year section ul:last-child {
+            margin-bottom: 0;
+        }
+
+        #timeline section.year section ul:first-of-type:after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background: #C5C5C5;
+            border: 2px solid #FFFFFF;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            border-radius: 50%;
+            position: absolute;
+            left: 54px;
+            top: 3px;
+            z-index: 2;
+        }
+
+        #timeline section.year section ul li {
+            margin-left: .5rem;
+        }
+
+        #timeline section.year section ul li:before {
+            content: '·';
+            margin-left: -.5rem;
+            padding-right: .3rem;
+        }
+
+        #timeline section.year section ul li:not(:first-child) {
+            margin-top: .5rem;
+        }
+
+        #timeline section.year section ul li span.price {
+            color: mediumturquoise;
+            font-weight: 500;
+        }
+
+        #price {
+            display: inline;
+        }
+
+        svg {
+            border: 3px solid white;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+
+    }
+
+    .edit-profile {
+        form {
+            padding-top: 40px;
+            display: inline-block;
+            input,
+            textarea,
+            #select {
+                width: 70%;
+                padding: 10px 20px;
+                background: transparent;
+                border: 0;
+                border: 1px solid #10606c;
+                margin-bottom: 30px;
+                color: white;
+
+                &:focus {
+                    outline: 0;
+                    outline: 1px solid #fab072;
+                    ;
+                }
+            }
+
+            button {
+                display: inline-block;
+                background: transparent;
+                border: 0;
+                border: 1px solid #10606c;
+                margin-bottom: 30px;
+                color: white;
+                padding: 10px 35px;
+                border-radius: 3px;
+                transition: all linear .3s;
+                cursor: pointer;
+                position: relative;
+                z-index: 999;
+
+                &:hover {
+                    color: #fab072;
+                }
+            }
+            #select {
+                option{
+                    color:@line-color;
+                }
+            }
+        }
+    }
+
+    .nav-link {
+        color: @line-color;
+    }
+
+    .nav-tabs {
+        border-color: @line-color;
+    }
+
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+        background: transparent;
+        color: white;
+        border-color: @line-color;
+    }
+}
+
+
+
+
+.about-section {
+    overflow-y: scroll;
+    height: 100%;
+    display: block;
+    position: sticky;
+}
+
+.about-section::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+/* Track */
+.about-section::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+.about-section::-webkit-scrollbar-thumb {
+    background: #315760;
+    border-radius: 25px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #315760;
+}

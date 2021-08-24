@@ -1,0 +1,172 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+body p {
+  color: #595959;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.padding {
+  padding: 150px 0px;
+}
+#middle-contents .mid-frame {
+  float: left;
+  width: 800px;
+  height: 700px;
+  padding: 0px 15px;
+}
+#middle-contents .content {
+  position: relative;
+  padding: 10px;
+  height: 600px;
+}
+#middle-contents .content .top-left-frame {
+  background: url(../images/frame/middle/top-left.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 90px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#middle-contents .content .bottom-left-frame {
+  background: url(../images/frame/middle/bottom-left.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 204px;
+  height: 130px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#middle-contents .content .bottom-right-frame {
+  background: url(../images/frame/middle/bottom-right.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 379px;
+  height: 219px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#middle-contents .content .profile-description {
+  position: absolute;
+  height: 500px;
+  width: 650px;
+  left: 50%;
+  top: 52%;
+  transform: translate(-50%, -50%);
+}
+#middle-contents .content .profile-description .current-cup-logo {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background: url('../images/frame/player-profile/cup-logo.png');
+  background-size: 100% 100%;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+}
+#middle-contents .content .profile-description .current-cup-logo img {
+  width: 100%;
+}
+#middle-contents .content .profile-description .cup-name {
+  position: absolute;
+  width: 500px;
+  height: 100px;
+  background: url('../images/frame/player-profile/cup-name.png');
+  background-size: 100% 100%;
+  top: 10px;
+  right: 10px;
+}
+#middle-contents .content .profile-description .cup-name h1 {
+  font-size: 24px;
+  color: white;
+  line-height: 100px;
+  padding-left: 50px;
+}
+#middle-contents .content .profile-description .country-picture {
+  position: absolute;
+  height: 80px;
+  width: 130px;
+  top: 120px;
+  left: 14px;
+}
+#middle-contents .content .profile-description .country-picture img {
+  width: 100%;
+  height: 100%;
+}
+#middle-contents .content .profile-description .profile-picture {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: 220px;
+  left: 10px;
+}
+#middle-contents .content .profile-description .profile-picture .b1 {
+  position: absolute;
+  height: 190px;
+  width: 190px;
+  background: url('../images/frame/player-profile/center_rotate.png');
+  background-size: 100% 100%;
+  top: 5px;
+  left: 5px;
+}
+#middle-contents .content .profile-description .profile-picture .b2 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  background: url('../images/frame/player-profile/inner1.png');
+  background-size: 100% 100%;
+  top: 15px;
+  left: 15px;
+}
+#middle-contents .content .profile-description .profile-picture .b2 {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  background: url('../images/frame/player-profile/inner2.png');
+  background-size: 100% 100%;
+  top: 15px;
+  left: 15px;
+}
+#middle-contents .content .profile-description .profile-picture .player-img {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  background: url('../images/frame/player-profile/inner2.png');
+  background-size: 100% 100%;
+  top: 15px;
+  left: 15px;
+}
+#middle-contents .content .profile-description .profile-picture .player-img img {
+  width: 100%;
+}
+#middle-contents .content .profile-description .player-des {
+  position: absolute;
+  right: 10px;
+  top: 125px;
+  width: 420px;
+  height: 350px;
+  background: url('../images/frame/player-profile/porfile-description.png');
+  background-size: 100% 100%;
+}
+#middle-contents .content .profile-description .player-des table {
+  border-collapse: collapse;
+  padding-left: 82px;
+  padding-top: 41px;
+  display: block;
+}
+#middle-contents .content .profile-description .player-des table tr td {
+  color: white;
+  padding: 5px 0px;
+}

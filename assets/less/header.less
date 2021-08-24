@@ -1,0 +1,64 @@
+@import 'variable.less';
+
+#header {
+    height: 55px;
+    // border: 1px solid @line-color;
+
+    .header-frame {
+        width: 1200px;
+        height: 55px;
+        position: relative;
+        margin: 0 auto;
+        background-image: url(../images/frame/header/nav-bg.png);
+        background-size: 100% 100%;
+
+        .left-link {
+            position: absolute;
+            top: 15px;
+            left: 130px;
+
+            ul {
+                display: inline-block;
+                margin: 0;
+
+                li {
+                    float: left;
+
+                    a {
+                        display: inline-block;
+
+                        i {
+                            display: inline-block;
+                            color: @line-color;
+                            margin: 0px 7px;
+                        }
+                    }
+                }
+            }
+        }
+        .right-link {
+            position: absolute;
+            top: 15px;
+            right: 160px;
+
+            ul {
+                display: inline-block;
+                margin: 0;
+
+                li {
+                    float: left;
+
+                    a {
+                        display: inline-block;
+
+                        i {
+                            display: inline-block;
+                            color: @line-color;
+                            margin: 0px 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

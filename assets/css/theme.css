@@ -1,0 +1,28 @@
+@import 'reset.css';
+@import 'bootstrap.min.css';
+@import 'bootstrap-better-nav.min.css';
+@import 'materialdesignicons.min.css';
+@import 'font-awesome.min.css';
+@import 'animate.css';
+@import 'slick.css';
+@import 'flaticon.css';
+
+/* template css */
+
+@import '../less/body.css';
+@import '../less/header.css';
+
+@import '../less/middle-content.css';
+@import '../less/middle-left-navbar.css';
+@import '../less/middle-mid-content.css';
+@import '../less/middle-right.css';
+@import '../less/middle-player-profile.css';
+@import '../less/feed-back.css';
+@import '../less/contact-information.css';
+@import '../less/profile.css';
+@import '../less/forum.css';
+
+@import '../less/footer.css';
+
+
+@import 'responsive.css';

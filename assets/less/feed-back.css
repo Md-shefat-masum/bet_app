@@ -1,0 +1,106 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+body p {
+  color: #595959;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.padding {
+  padding: 150px 0px;
+}
+#middle-contents .mid-frame {
+  float: left;
+  width: 800px;
+  height: 700px;
+  padding: 0px 15px;
+}
+#middle-contents .content {
+  position: relative;
+  padding: 10px;
+  height: 600px;
+}
+#middle-contents .content .top-left-frame {
+  background: url(../images/frame/middle/top-left.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 90px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#middle-contents .content .bottom-left-frame {
+  background: url(../images/frame/middle/bottom-left.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 204px;
+  height: 130px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#middle-contents .content .bottom-right-frame {
+  background: url(../images/frame/middle/bottom-right.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 379px;
+  height: 219px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#middle-contents .content .feedback-form {
+  width: 100%;
+  height: 100%;
+}
+#middle-contents .content .feedback-form h2 {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 50px 0px;
+}
+#middle-contents .content .feedback-form form {
+  padding: 20px;
+  padding-right: 30px;
+}
+#middle-contents .content .feedback-form form input,
+#middle-contents .content .feedback-form form textarea {
+  width: 100%;
+  padding: 20px;
+  background: transparent;
+  border: 0;
+  border: 1px solid #10606c;
+  margin-bottom: 30px;
+  color: white;
+}
+#middle-contents .content .feedback-form form input:focus,
+#middle-contents .content .feedback-form form textarea:focus {
+  outline: 0;
+  outline: 1px solid #fab072;
+}
+#middle-contents .content .feedback-form form button {
+  display: inline-block;
+  background: transparent;
+  border: 0;
+  border: 1px solid #10606c;
+  margin-bottom: 30px;
+  color: white;
+  padding: 10px 35px;
+  border-radius: 3px;
+  transition: all linear 0.3s;
+  cursor: pointer;
+  position: relative;
+  z-index: 999;
+}
+#middle-contents .content .feedback-form form button:hover {
+  color: #fab072;
+}

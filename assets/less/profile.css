@@ -1,0 +1,256 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+body p {
+  color: #595959;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.padding {
+  padding: 150px 0px;
+}
+.profile-information {
+  padding: 40px;
+}
+.profile-information .about-section {
+  height: 448px;
+  margin-top: 10px;
+  overflow-y: scroll;
+}
+.profile-information .about-section .card {
+  margin-bottom: 30px;
+  background: transparent;
+}
+.profile-information .about-section .card .card-header {
+  background: url('../images/frame/player-profile/cup-name.png');
+  background-size: 35% 83%;
+  background-repeat: no-repeat;
+}
+.profile-information .about-section .card .card-header h3 {
+  color: white;
+  font-size: 20px;
+}
+.profile-information .about-section .card .card-body {
+  border: 1px solid #315760;
+  margin-right: 40px;
+}
+.profile-information .about-section .card .card-body strong {
+  color: white;
+}
+.profile-information .about-section .card .card-body .about-info-p p {
+  color: white;
+}
+.profile-information .timeline-section {
+  height: 448px;
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+}
+.profile-information .timeline-section .item {
+  display: flex;
+  flex: auto;
+}
+.profile-information .timeline-section #timeline {
+  position: relative;
+  display: table;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+}
+.profile-information .timeline-section #timeline ul li {
+  color: white;
+}
+.profile-information .timeline-section #timeline div:after {
+  content: '';
+  width: 2px;
+  position: absolute;
+  top: 0.5rem;
+  bottom: 0rem;
+  left: 60px;
+  z-index: 1;
+  background: #C5C5C5;
+}
+.profile-information .timeline-section #timeline h3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5rem;
+  color: #888;
+  margin: 0;
+  font-size: 1em;
+  font-weight: 400;
+}
+@media (min-width: 62em) {
+  .profile-information .timeline-section #timeline h3 {
+    font-size: 1.1em;
+  }
+}
+.profile-information .timeline-section #timeline section.year {
+  position: relative;
+}
+.profile-information .timeline-section #timeline section.year:first-child section {
+  margin-top: -1.3em;
+  padding-bottom: 0px;
+}
+.profile-information .timeline-section #timeline section.year section {
+  position: relative;
+  padding-bottom: 1.25em;
+  margin-bottom: 2.2em;
+}
+.profile-information .timeline-section #timeline section.year section h4 {
+  position: absolute;
+  bottom: 0;
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 1.2em;
+  margin: 0;
+  padding: 0 0 0 89px;
+  color: #999999;
+}
+@media (min-width: 62em) {
+  .profile-information .timeline-section #timeline section.year section h4 {
+    font-size: 1em;
+  }
+}
+.profile-information .timeline-section #timeline section.year section ul {
+  list-style-type: none;
+  padding: 0 0 0 75px;
+  margin: -1.35rem 0 1em;
+  max-width: 32rem;
+  font-size: 1em;
+}
+@media (min-width: 62em) {
+  .profile-information .timeline-section #timeline section.year section ul {
+    font-size: 1.1em;
+    padding: 0 0 0 81px;
+  }
+}
+.profile-information .timeline-section #timeline section.year section ul:last-child {
+  margin-bottom: 0;
+}
+.profile-information .timeline-section #timeline section.year section ul:first-of-type:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #C5C5C5;
+  border: 2px solid #FFFFFF;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 54px;
+  top: 3px;
+  z-index: 2;
+}
+.profile-information .timeline-section #timeline section.year section ul li {
+  margin-left: 0.5rem;
+}
+.profile-information .timeline-section #timeline section.year section ul li:before {
+  content: '·';
+  margin-left: -0.5rem;
+  padding-right: 0.3rem;
+}
+.profile-information .timeline-section #timeline section.year section ul li:not(:first-child) {
+  margin-top: 0.5rem;
+}
+.profile-information .timeline-section #timeline section.year section ul li span.price {
+  color: mediumturquoise;
+  font-weight: 500;
+}
+.profile-information .timeline-section #price {
+  display: inline;
+}
+.profile-information .timeline-section svg {
+  border: 3px solid white;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.profile-information .edit-profile form {
+  padding-top: 40px;
+  display: inline-block;
+}
+.profile-information .edit-profile form input,
+.profile-information .edit-profile form textarea,
+.profile-information .edit-profile form #select {
+  width: 70%;
+  padding: 10px 20px;
+  background: transparent;
+  border: 0;
+  border: 1px solid #10606c;
+  margin-bottom: 30px;
+  color: white;
+}
+.profile-information .edit-profile form input:focus,
+.profile-information .edit-profile form textarea:focus,
+.profile-information .edit-profile form #select:focus {
+  outline: 0;
+  outline: 1px solid #fab072;
+}
+.profile-information .edit-profile form button {
+  display: inline-block;
+  background: transparent;
+  border: 0;
+  border: 1px solid #10606c;
+  margin-bottom: 30px;
+  color: white;
+  padding: 10px 35px;
+  border-radius: 3px;
+  transition: all linear 0.3s;
+  cursor: pointer;
+  position: relative;
+  z-index: 999;
+}
+.profile-information .edit-profile form button:hover {
+  color: #fab072;
+}
+.profile-information .edit-profile form #select option {
+  color: #315760;
+}
+.profile-information .nav-link {
+  color: #315760;
+}
+.profile-information .nav-tabs {
+  border-color: #315760;
+}
+.profile-information .nav-tabs .nav-item.show .nav-link,
+.profile-information .nav-tabs .nav-link.active {
+  background: transparent;
+  color: white;
+  border-color: #315760;
+}
+.about-section {
+  overflow-y: scroll;
+  height: 100%;
+  display: block;
+  position: sticky;
+}
+.about-section::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+/* Track */
+.about-section::-webkit-scrollbar-track {
+  background: transparent;
+}
+/* Handle */
+.about-section::-webkit-scrollbar-thumb {
+  background: #315760;
+  border-radius: 25px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #315760;
+}

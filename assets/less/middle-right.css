@@ -1,0 +1,105 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+body p {
+  color: #595959;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.padding {
+  padding: 150px 0px;
+}
+#middle-contents .right-nav {
+  float: left;
+  width: 200px;
+  height: 700px;
+}
+#middle-contents .right-nav ul {
+  margin-top: 30px;
+}
+#middle-contents .right-nav ul li {
+  position: relative;
+  transition: all linear 0.3s;
+}
+#middle-contents .right-nav ul li a {
+  display: block;
+  padding: 10px;
+  padding-right: 30px;
+  position: relative;
+  margin: 10px 0px;
+  color: white;
+  text-align: right;
+  text-transform: capitalize;
+  transition: all linear 0.3s;
+}
+#middle-contents .right-nav ul li a::before {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background-image: url(../images/frame/menu/menu-single-bottom-frame2.png);
+  background-size: 100% 100%;
+  content: '';
+  top: 0;
+  left: 0;
+  transition: all linear 0.3s;
+}
+#middle-contents .right-nav ul li a::after {
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  background-image: url(../images/frame/menu/menu-single-top-frame2.png);
+  background-size: 100% 100%;
+  content: '';
+  bottom: 0;
+  left: 0;
+  transition: all linear 0.3s;
+}
+#middle-contents .right-nav ul li a:hover {
+  text-decoration: none;
+  color: #fab072;
+}
+#middle-contents .right-nav ul li a:hover::after {
+  background-image: url(../images/frame/menu/menu-single-top-frame2hover.png);
+}
+#middle-contents .right-nav ul li a:hover::before {
+  background-image: url(../images/frame/menu/menu-single-bottom-frame2hover.png);
+}
+#middle-contents .right-nav ul li:nth-child(1) a {
+  width: 90%;
+  margin-left: 20%;
+}
+#middle-contents .right-nav ul li:hover ul,
+#middle-contents .right-nav ul li:focus ul {
+  opacity: 1;
+  visibility: visible;
+}
+#middle-contents .right-nav ul li ul {
+  position: absolute;
+  transition: all linear 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+  width: 100%;
+  left: -200px;
+  top: -10px;
+}
+#middle-contents .right-nav ul li ul li:nth-child(1) a {
+  width: 100%;
+  margin-left: -30px;
+}
+#middle-contents .right-nav ul li ul li:nth-child(2) a {
+  width: 100%;
+  margin-left: -55px;
+}
+#middle-contents .right-nav ul li ul li:nth-child(3) a {
+  width: 100%;
+  margin-left: -80px;
+}

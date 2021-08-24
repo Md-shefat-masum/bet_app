@@ -1,0 +1,125 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+body p {
+  color: #595959;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.padding {
+  padding: 150px 0px;
+}
+#middle-contents .left-nav {
+  float: left;
+  width: 200px;
+  height: 700px;
+}
+#middle-contents .left-nav ul {
+  margin-top: 30px;
+}
+#middle-contents .left-nav ul li {
+  position: relative;
+  transition: all linear 0.3s;
+}
+#middle-contents .left-nav ul li a {
+  display: block;
+  padding: 10px;
+  padding-left: 30px;
+  position: relative;
+  margin: 10px 0px;
+  color: white;
+}
+#middle-contents .left-nav ul li a::before {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background-image: url(../images/frame/menu/menu-single-bottom-frame.png);
+  background-size: 100% 100%;
+  content: '';
+  top: 0;
+  left: 0;
+}
+#middle-contents .left-nav ul li a::after {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background-image: url(../images/frame/menu/menu-single-top-frame.png);
+  background-size: 100% 100%;
+  content: '';
+  bottom: 0;
+  left: 0;
+}
+#middle-contents .left-nav ul li a:hover,
+#middle-contents .left-nav ul li a:focus {
+  text-decoration: none;
+  color: #fab072;
+}
+#middle-contents .left-nav ul li a:hover::after,
+#middle-contents .left-nav ul li a:focus::after {
+  background-image: url(../images/frame/menu/menu-single-top-framehover.png);
+}
+#middle-contents .left-nav ul li a:hover::before,
+#middle-contents .left-nav ul li a:focus::before {
+  background-image: url(../images/frame/menu/menu-single-bottom-framehover.png);
+}
+#middle-contents .left-nav ul li:nth-child(1) a {
+  width: 90%;
+  margin-left: -15%;
+}
+#middle-contents .left-nav ul li:hover > ul,
+#middle-contents .left-nav ul li:focus > ul {
+  opacity: 1;
+  visibility: visible;
+}
+#middle-contents .left-nav ul li > ul {
+  position: absolute;
+  transition: all linear 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9999;
+  width: 100%;
+  left: 220px;
+  top: -10px;
+  background: rgba(0, 0, 0, 0.5);
+}
+#middle-contents .left-nav ul li > ul > li {
+  position: relative;
+  transition: all linear 0.3s;
+}
+#middle-contents .left-nav ul li > ul > li:nth-child(1) a {
+  width: 100%;
+  margin-right: -30px;
+  margin-left: 0;
+}
+#middle-contents .left-nav ul li > ul > li:nth-child(2) a {
+  width: 100%;
+  margin-right: -30px;
+}
+#middle-contents .left-nav ul li > ul > li:nth-child(3) a {
+  width: 100%;
+  margin-right: -30px;
+}
+#middle-contents .left-nav ul li > ul > li:hover ul,
+#middle-contents .left-nav ul li > ul > li:focus ul {
+  opacity: 1;
+  visibility: visible;
+}
+#middle-contents .left-nav ul li > ul > li ul {
+  position: absolute;
+  transition: all linear 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 99999;
+  width: 100%;
+  left: 250px;
+  top: -10px;
+  left: 220px;
+}

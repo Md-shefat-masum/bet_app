@@ -1,0 +1,112 @@
+@import 'variable.less';
+
+#middle-contents {
+    .right-nav {
+        float: left;
+        width: 200px;
+        height: 700px;
+
+        // border: 1px solid red;
+        ul{
+            margin-top: 30px;
+
+            li {
+                a {
+                    display: block;
+                    padding: 10px;
+                    padding-right: 30px;
+                    position: relative;
+                    margin: 10px 0px;
+                    color: white;
+                    text-align: right;
+                    text-transform: capitalize;
+                    transition: all linear .3s;
+
+                    &::before {
+                        position: absolute;
+                        width: 100%;
+                        height: 6px;
+                        background-image: url(../images/frame/menu/menu-single-bottom-frame2.png);
+                        background-size: 100% 100%;
+                        content: '';
+                        top: 0;
+                        left: 0;
+                        transition: all linear .3s;
+                    }
+
+                    &::after {
+                        position: absolute;
+                        width: 100%;
+                        height: 8px;
+                        background-image: url(../images/frame/menu/menu-single-top-frame2.png);
+                        background-size: 100% 100%;
+                        content: '';
+                        bottom: 0;
+                        left: 0;
+                        transition: all linear .3s;
+                    }
+
+                    &:hover {
+                        text-decoration: none;
+                        color: #fab072;
+                    }
+
+                    &:hover::after {
+                        background-image: url(../images/frame/menu/menu-single-top-frame2hover.png);
+                    }
+
+                    &:hover::before {
+                        background-image: url(../images/frame/menu/menu-single-bottom-frame2hover.png);
+                    }
+                }
+
+                &:nth-child(1) {
+                    a {
+                        width: 90%;
+                        margin-left: 20%;
+                    }
+                }
+
+                position: relative;
+                transition: all linear .3s;
+                &:hover,
+                &:focus{
+                    ul{
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+                ul{
+                    position: absolute;
+                    transition: all linear .3s;
+                    opacity: 0;
+                    visibility: hidden;
+                    z-index: 999;
+                    width: 100%;
+                    left: -200px;
+                    top: -10px;
+                    li{
+                        &:nth-child(1) {
+                            a {
+                                width: 100%;
+                                margin-left: -30px;
+                            }
+                        }
+                        &:nth-child(2) {
+                            a {
+                                width: 100%;
+                                margin-left: -55px;
+                            }
+                        }
+                        &:nth-child(3) {
+                            a {
+                                width: 100%;
+                                margin-left: -80px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
